@@ -29,7 +29,7 @@ client.on('messageCreate', (message) => {
             console.log(`Channel Created Succesfully`);
         }).catch(error => {
             console.error(error);
-            message.reply("There was an error creating a channel")
+            message.reply("There was an error creating a channel, check console")
         })
 
 
