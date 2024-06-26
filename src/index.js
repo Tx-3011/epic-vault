@@ -1,4 +1,5 @@
 const {Client, IntentsBitField, ChannelType} = require('discord.js')
+require('dotenv').config()
 
 const client = new Client({
     intents: [
@@ -43,5 +44,5 @@ client.on('messageCreate', (message) => {
 
 
 
-client.login("MTI1NTQ4NjA5NDEzMzE3MDIyNw.GSmnyo.eavPUcbaUmXBmuRCdLshs0w6VuzVbcqOXKz0Eg")
+client.login(process.env.passkey)
 
